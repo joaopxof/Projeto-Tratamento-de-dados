@@ -268,3 +268,62 @@ Ao executar o programa, serão exibidos:
 - Python
 - Pandas
 - Matplotlib
+
+# Justificativa das Escolhas Técnicas
+
+## Utilização da biblioteca Pandas
+
+A biblioteca `pandas` foi utilizada devido à sua eficiência no tratamento e análise de dados tabulares. Ela facilita operações como:
+
+- Leitura de arquivos CSV;
+- Conversão de datas;
+- Identificação de valores ausentes;
+- Organização dos dados;
+- Cálculo de médias estatísticas.
+
+Além disso, o Pandas possui sintaxe simples e amplamente utilizada em projetos de análise de dados e ciência de dados.
+
+---
+
+## Utilização da biblioteca Matplotlib
+
+A biblioteca `matplotlib` foi escolhida para a geração dos gráficos por permitir:
+
+- Visualização clara dos dados;
+- Criação de gráficos de linhas;
+- Personalização de títulos, legendas e eixos;
+- Inclusão de linhas de média para facilitar a interpretação dos resultados.
+
+A visualização gráfica auxilia na compreensão do comportamento dos dados ao longo do tempo.
+
+---
+
+## Utilização do formato CSV
+
+O formato `.csv` foi utilizado porque:
+
+- É simples e leve;
+- Possui fácil integração com Python;
+- É amplamente utilizado para armazenamento de dados tabulares;
+- Facilita a importação e exportação de informações.
+
+O separador `;` foi definido para manter compatibilidade com arquivos gerados em planilhas eletrônicas como Excel em configurações regionais brasileiras.
+
+---
+
+## Conversão da coluna de datas
+
+A conversão da coluna `Data` para o formato de data do Python foi necessária para:
+
+- Organizar corretamente os registros em ordem cronológica;
+- Melhorar a manipulação temporal dos dados;
+- Garantir precisão na exibição dos gráficos.
+
+---
+
+## Tratamento de valores ausentes
+
+Foi utilizada a função:
+
+```python
+df.dropna()
